@@ -14,10 +14,28 @@ def my_first_gui_function():
     except ValueError:
         text_cml.value = "Musíš dát číslo"
         return
+    
+def dary_ty():
+    vek= combo.value
+    nic= zivot_ty(vek)
+    text_4.value = nic
 
+def pohlavi():
+    po= choice.value
+    nicc= zena(po)
+    text_5.value = nicc  
+    
 
 ### GUI App
-app = App(title="My App", width=775, height=650)
+app = App(layout="auto", title ="My App", width= 775, height= 650 )
+text_1 = Text(app, text="Vítáme vás na nejlepší stránce na světě")
+text_2 = Text (app, text="Nejdříve zadejte pohlaví")
+choice = ButtonGroup(app, options=["ON", "ONA", "Jiné"])
+text_3 = Text(app, text="A váš věk?")
+combo = Combo(app, options=["60-70", "70-95", "100 a více"], command = dary_ty )
+text_4 = Text(app)
+text_5 = Text(app)
+
 
 ## Window 1
 window1 = Box(app, visible=True)

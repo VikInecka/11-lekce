@@ -8,6 +8,24 @@ def neco(weight, activityfactor):
     cmlrounded= round(cml, 1)
     return cmlrounded
 
+def zivot_ty(jaky_vek):
+    if jaky_vek == "100 a více":
+        penize= "Dostavas pocatecni bonus 100 kč"
+    else: 
+        penize= "Nemas nic si moc mlady :C"
+    return penize
+    
+def zena(tve_pohl):
+    if tve_pohl == "ONA":
+        pohlav= "Ahoj ženo"
+    elif tve_pohl == "ON":
+        pohlav = "Ahoj muži"
+    else:
+        pohlav= "Ahoj osobo"
+    return pohlav
+
+
+
 
 
 # Main Window Variables
