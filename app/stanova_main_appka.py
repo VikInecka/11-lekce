@@ -1,5 +1,5 @@
 # Importing all app imports
-from config import *
+from stanova_config_appka import *
 
 # Main Window Functions
 def neco(weight, activityfactor):    

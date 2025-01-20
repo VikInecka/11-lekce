@@ -1,6 +1,6 @@
 ### GUI imports
 from guizero import *
-from main import *
+from stanova_main_appka import *
 
 ### GUI functions
 def my_first_gui_function():
